@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <title>Triplice Fronteria · Converse com a nossa assistente</title>
+  <meta name="description" content="Converse com a assistente virtual da Triplice Fronteria e entenda, em poucos minutos, como funciona o caminho para trabalhar e viver em Foggia, na Itália.">
+  <!-- Prévia: fora do Google. Para liberar, troque por "index, follow" (ou publique com --indexar). -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#072240">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https: data:; media-src 'self' https:; frame-src https:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://matheusfut22.github.io/triplice-fronteria-conversa/">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Converse com a Triplice Fronteria">
+  <meta property="og:description" content="Em poucos minutos, entenda como funciona o caminho para trabalhar e viver em Foggia, na Itália.">
+  <meta property="og:image" content="https://matheusfut22.github.io/triplice-fronteria-conversa/assets/og-conversa.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/avatar.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fontes/instrument-sans-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fontes/bodoni-moda-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/conversa.css">
+</head>
+<body>
+  <div class="pagina">
+    <!-- Painel da marca (só em telas grandes) -->
+    <aside class="lateral" aria-hidden="true">
+      <img class="lateral-logo" src="assets/avatar.svg" alt="" width="72" height="72" data-marca="avatar">
+      <p class="lateral-nome" data-marca="nome">Triplice Fronteria</p>
+      <p class="lateral-titulo">Converse com a nossa assistente</p>
+      <p class="lateral-texto">Em poucos minutos, você entende como funciona o caminho até Foggia, no sul da Itália.</p>
+    </aside>
+
+    <main class="chat" aria-label="Conversa com a Triplice Fronteria">
+      <header class="chat-topo">
+        <img class="avatar" src="assets/avatar.svg" alt="" width="44" height="44" data-marca="avatar">
+        <div class="contato">
+          <h1 class="contato-nome" data-marca="nome">Triplice Fronteria</h1>
+          <p class="contato-status" id="status" aria-live="off">Assistente virtual • online</p>
+        </div>
+        <button class="botao-icone" id="reiniciar" type="button" aria-label="Recomeçar a conversa" title="Recomeçar a conversa">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+        </button>
+      </header>
+      <p class="faixa" id="faixa">Trabalho e nova vida em Foggia, Itália</p>
+
+      <div class="rolagem" id="rolagem">
+        <div class="mensagens" id="mensagens" role="log" aria-live="polite" aria-relevant="additions" aria-label="Mensagens">
+          <p class="dia">Hoje</p>
+          <p class="aviso" id="aviso">Atendimento automático. Toque nas respostas abaixo.</p>
+        </div>
+        <div class="digitando" id="digitando" hidden aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="opcoes" id="opcoes" role="group" hidden></div>
+      </div>
+
+      <form class="compositor" id="compositor" hidden novalidate>
+        <label class="sr-only" for="campo-texto" id="rotulo-campo">Digite sua resposta</label>
+        <input id="campo-texto" name="resposta" type="text" enterkeyhint="send" autocapitalize="words">
+        <button class="enviar" type="submit" aria-label="Enviar">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12l16-8-6 16-3-7z"/><path d="M11 13l9-9"/></svg>
+        </button>
+      </form>
+
+      <footer class="chat-rodape" id="rodape">
+        <span class="rodape-seguro">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          <span id="rodape-texto">Suas respostas ficam só neste aparelho até você escolher enviar.</span>
+        </span>
+      </footer>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="sem-js">Ative o JavaScript do navegador para conversar com a assistente da Triplice Fronteria.</p></noscript>
+
+  <script src="js/erro-fluxo.js"></script>
+  <script src="fluxo.js"></script>
+  <script src="js/validar.js"></script>
+  <script src="js/motor.js"></script>
+</body>
+</html>

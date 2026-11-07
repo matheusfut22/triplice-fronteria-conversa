@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <!-- Padrão de fundo da conversa: rotas, aviões e pontos, bem sutil -->
+  <g fill="none" stroke="#0b3059" stroke-opacity=".075" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 60c25-28 55-36 88-26" stroke-dasharray="2 7"/>
+    <path d="M106 30l8 4-8 4 2-4z"/>
+    <circle cx="20" cy="60" r="3"/>
+    <path d="M150 120c22 18 46 22 72 10" stroke-dasharray="2 7"/>
+    <circle cx="222" cy="130" r="3"/>
+    <path d="M168 40l14 6-14 6 4-6z M172 46h-10"/>
+    <path d="M40 160a16 16 0 1 0 32 0a16 16 0 1 0-32 0 M40 160h32 M56 144c-6 6-6 26 0 32 M56 144c6 6 6 26 0 32"/>
+    <path d="M118 196l8-14 8 14z"/>
+    <path d="M196 196l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+    <path d="M86 98h18 M95 89v18"/>
+    <circle cx="200" cy="72" r="1.6"/>
+    <circle cx="130" cy="80" r="1.6"/>
+    <circle cx="24" cy="214" r="1.6"/>
+    <circle cx="160" cy="230" r="1.6"/>
+  </g>
+</svg>
